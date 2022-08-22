@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$light_orange: hsl(25, 97%, 65%);
+$orange: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$light_grey: hsl(217, 12%, 63%);
+$medium_grey: hsl(216, 12%, 54%);
+$not_so_dark_blue: hsl(213, 19%, 22%);
+$dark_blue: hsl(213, 19%, 18%);
+$very_dark_blue: hsl(216, 12%, 8%);
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $very_dark_blue;
+  font-family: 'Overpass', sans-serif;
+}
+
+@media only screen and (max-width: 1439px) {
+  .hide {
+    display: none;
+  }
+
+  .container-notes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: $dark_blue;
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: $light_grey;
+    padding: 10px 30px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    height: 375px;
+    width: 375px;
+    line-height: 25px;
+
+    h1 {
+      color: $white;
+      font-weight: 700;
+    }
+
+    .ball {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: $not_so_dark_blue;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      transition: color 0.2s;
+    }
+
+    .ball.highlight {
+      background-color: $medium_grey;
+      color: $white;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .ball:hover {
+      background-color: $orange;
+      color: white;
+    }
+
+    section.notes {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    button {
+      background-color: $orange;
+      width: 100%;
+      border: 0;
+      border-radius: 25px;
+      padding: 13px 10px;
+      color: $white;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    button:hover {
+      background-color: $white;
+      color: $orange;
+      cursor: pointer;
+    }
+  }
+
+  .container-tk {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: $dark_blue;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: $light_grey;
+    padding: 10px 30px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    height: 375px;
+    width: 375px;
+    line-height: 25px;
+
+    h1 {
+      color: $white;
+      font-weight: 700;
+    }
+
+    div.note {
+      background-color: $not_so_dark_blue;
+      color: $light_orange;
+      border-radius: 20px;
+      padding: 10px 10px 5px 10px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hide {
+    display: none;
+  }
+
+  .container-notes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: $dark_blue;
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: $light_grey;
+    padding: 10px 30px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    height: 375px;
+    width: 375px;
+    line-height: 25px;
+
+    h1 {
+      color: $white;
+      font-weight: 700;
+    }
+
+    .ball {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: $not_so_dark_blue;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      transition: color 0.2s;
+    }
+
+    .ball.highlight {
+      background-color: $medium_grey;
+      color: $white;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .ball:hover {
+      background-color: $orange;
+      color: white;
+    }
+
+    section.notes {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    button {
+      background-color: $orange;
+      width: 100%;
+      border: 0;
+      border-radius: 25px;
+      padding: 13px 10px;
+      color: $white;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    button:hover {
+      background-color: $white;
+      color: $orange;
+      cursor: pointer;
+    }
+  }
+
+  .container-tk {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: $dark_blue;
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: $light_grey;
+    padding: 10px 30px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    height: 375px;
+    width: 375px;
+    line-height: 25px;
+
+    h1 {
+      color: $white;
+      font-weight: 700;
+    }
+
+    div.note {
+      background-color: $not_so_dark_blue;
+      color: $light_orange;
+      border-radius: 20px;
+      padding: 10px 10px 5px 10px;
+    }
+  }
+}
+
+.attribution { font-size: 11px; text-align: center; color: white; }
+.attribution a { color: hsl(228, 45%, 44%); }
