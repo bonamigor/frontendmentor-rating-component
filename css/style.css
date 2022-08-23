@@ -15,9 +15,6 @@ body {
 }
 
 @media only screen and (max-width: 1439px) {
-  .hide {
-    display: none;
-  }
   .container-notes {
     display: flex;
     justify-content: space-evenly;
@@ -30,7 +27,7 @@ body {
     color: hsl(217deg, 12%, 63%);
     padding: 10px 30px;
     margin: 10px 10px;
-    border-radius: 10px;
+    border-radius: 25px;
     height: 375px;
     width: 375px;
     line-height: 25px;
@@ -94,7 +91,7 @@ body {
     color: hsl(217deg, 12%, 63%);
     padding: 10px 30px;
     margin: 10px 10px;
-    border-radius: 10px;
+    border-radius: 25px;
     height: 375px;
     width: 375px;
     line-height: 25px;
@@ -126,7 +123,7 @@ body {
     color: hsl(217deg, 12%, 63%);
     padding: 10px 30px;
     margin: 10px 10px;
-    border-radius: 10px;
+    border-radius: 25px;
     height: 375px;
     width: 375px;
     line-height: 25px;
@@ -191,7 +188,7 @@ body {
     color: hsl(217deg, 12%, 63%);
     padding: 10px 30px;
     margin: 10px 10px;
-    border-radius: 10px;
+    border-radius: 25px;
     height: 375px;
     width: 375px;
     line-height: 25px;
