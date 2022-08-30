@@ -125,7 +125,7 @@ body {
     margin: 10px 10px;
     border-radius: 25px;
     height: 375px;
-    width: 375px;
+    max-width: 375px;
     line-height: 25px;
   }
   .container-notes h1 {
@@ -156,6 +156,7 @@ body {
   }
   .container-notes section.notes {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
     align-items: center;
